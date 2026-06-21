@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shreya Bakery — Freshly Baked Happiness Every Day | Gaindakot</title>
+<meta name="description" content="Shreya Bakery in Gaindakot-8, Vijaya Chowk — custom cakes, pastries, bread &amp; desserts baked fresh daily. Order birthday cakes, wedding cakes &amp; more via WhatsApp.">
+<meta name="keywords" content="bakery Gaindakot, cake shop Gaindakot, custom cake Nepal, birthday cake Gaindakot, Shreya Bakery, Vijaya Chowk bakery">
+<meta property="og:title" content="Shreya Bakery — Freshly Baked Happiness Every Day">
+<meta property="og:description" content="Custom cakes, pastries &amp; bread baked fresh daily in Gaindakot-8, Vijaya Chowk.">
+<meta property="og:image" content="images/cake1.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="images/favicon-48.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,560;0,9..144,650;1,9..144,450;1,9..144,560&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Shreya Bakery",
+  "image": "images/shreyabakery.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Vijaya Chowk, Gaindakot-8",
+    "addressLocality": "Gaindakot",
+    "postalCode": "33000",
+    "addressCountry": "NP"
+  },
+  "telephone": "+977 9855083213",
+  "servesCuisine": "Bakery",
+  "priceRange": "NPR",
+  "sameAs": [
+    "https://www.facebook.com/shreyabakery123/",
+    "https://www.instagram.com/shreya_bakery/"
+  ]
+}
+</script>
+<style>
+/* ====================== TOKENS ====================== */
+:root{
+  --maroon: #7A1F2B;
+  --maroon-deep: #5A1620;
+  --cream: #FBF3E7;
+  --cream-soft: #F4E9D8;
+  --rose: #E8A0B4;
+  --rose-deep: #D67B95;
+  --gold: #C9A15A;
+  --gold-bright: #E0BC7E;
+  --charcoal: #2B211D;
+  --charcoal-soft: #5C4F47;
+  --white: #FFFFFF;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+
+  --shadow-soft: 0 8px 30px rgba(90, 22, 32, 0.10);
+  --shadow-lift: 0 20px 50px rgba(90, 22, 32, 0.18);
+
+  --ease: cubic-bezier(.22,1,.36,1);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth; overflow-x:hidden;}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+}
+
+body{
+  font-family:var(--font-body);
+  background:var(--cream);
+  color:var(--charcoal);
+  overflow-x:hidden;
+  line-height:1.6;
+}
+
+img{max-width:100%; display:block;}
+a{text-decoration:none; color:inherit;}
+button{font-family:inherit; cursor:pointer; border:none; background:none;}
+ul{list-style:none;}
+
+.container{
+  max-width:1240px;
+  margin:0 auto;
+  padding:0 28px;
+}
+
+::selection{background:var(--rose); color:var(--white);}
+
+:focus-visible{
+  outline:3px solid var(--gold);
+  outline-offset:3px;
+  border-radius:4px;
+}
+
+.eyebrow{
+  font-family:var(--font-body);
+  font-weight:700;
+  font-size:0.78rem;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  color:var(--maroon);
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.eyebrow::before{
+  content:'';
+  width:28px; height:2px;
+  background:var(--gold);
+  display:inline-block;
+}
+
+h1,h2,h3,h4{
+  font-family:var(--font-display);
+  font-weight:560;
+  color:var(--charcoal);
+  line-height:1.08;
+}
+
+.section-head{
+  max-width:640px;
+  margin-bottom:48px;
+}
+.section-head h2{
+  font-size:clamp(2.1rem, 4vw, 3.1rem);
+  margin-top:14px;
+}
+.section-head p{
+  margin-top:16px;
+  color:var(--charcoal-soft);
+  font-size:1.05rem;
+  max-width:520px;
+}
+.section-head.center{
+  margin-left:auto; margin-right:auto;
+  text-align:center;
+}
+.section-head.center .eyebrow{justify-content:center;}
+.section-head.center .eyebrow::before{display:none;}
+.section-head.center p{margin-left:auto; margin-right:auto;}
+
+section{
+  padding:110px 0;
+  position:relative;
+}
+@media (max-width:768px){
+  section{padding:72px 0;}
+}
+
+/* ====================== REVEAL ANIMATION ====================== */
+.reveal{
+  opacity:0;
+  transform:translateY(36px);
+  transition:opacity 0.9s var(--ease), transform 0.9s var(--ease);
+}
+.reveal.in{opacity:1; transform:translateY(0);}
+.reveal-left{opacity:0; transform:translateX(-50px);}
+.reveal-left.in{opacity:1; transform:translateX(0); transition:opacity 0.9s var(--ease), transform 0.9s var(--ease);}
+.reveal-right{opacity:0; transform:translateX(50px);}
+.reveal-right.in{opacity:1; transform:translateX(0); transition:opacity 0.9s var(--ease), transform 0.9s var(--ease);}
+.stagger > *{transition-delay:calc(var(--i) * 0.09s);}
+
+/* ====================== BUTTONS ====================== */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding:16px 32px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:0.95rem;
+  letter-spacing:0.01em;
+  position:relative;
+  overflow:hidden;
+  transition:transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+  white-space:nowrap;
+}
+.btn::after{
+  content:'';
+  position:absolute; inset:0;
+  background:radial-gradient(circle, rgba(255,255,255,0.35) 0%, transparent 70%);
+  opacity:0;
+  transition:opacity 0.4s var(--ease);
+}
+.btn:hover::after{opacity:1;}
+.btn:hover{transform:translateY(-3px) scale(1.02);}
+.btn:active{transform:translateY(-1px) scale(0.99);}
+
+.btn-primary{
+  background:linear-gradient(135deg, #25D366, #1fb955);
+  color:#fff;
+  box-shadow:0 10px 30px rgba(37,211,102,0.35);
+}
+.btn-primary:hover{box-shadow:0 16px 40px rgba(37,211,102,0.48);}
+
+.btn-secondary{
+  background:transparent;
+  color:var(--cream);
+  border:1.5px solid rgba(251,243,231,0.6);
+  backdrop-filter:blur(6px);
+}
+.btn-secondary:hover{
+  background:rgba(251,243,231,0.12);
+  border-color:var(--cream);
+}
+
+.btn-dark{
+  background:var(--maroon);
+  color:var(--cream);
+  box-shadow:0 10px 26px rgba(122,31,43,0.3);
+}
+.btn-dark:hover{box-shadow:0 16px 36px rgba(122,31,43,0.42); background:var(--maroon-deep);}
+
+.btn-small{padding:11px 22px; font-size:0.82rem;}
+
+/* WhatsApp icon */
+.wa-icon{width:18px; height:18px; flex-shrink:0;}
+
+/* ====================== NAV ====================== */
+.nav{
+  position:fixed; top:0; left:0; right:0;
+  z-index:1000;
+  padding:22px 0;
+  transition:all 0.45s var(--ease);
+}
+.nav.scrolled{
+  padding:14px 0;
+  background:rgba(251,243,231,0.88);
+  backdrop-filter:blur(16px) saturate(160%);
+  box-shadow:0 4px 24px rgba(90,22,32,0.08);
+}
+.nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.nav-logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-family:var(--font-display);
+  font-weight:650;
+  font-size:1.4rem;
+  color:var(--cream);
+  transition:color 0.45s var(--ease);
+}
+.nav.scrolled .nav-logo{color:var(--maroon);}
+.nav-logo img{width:40px; height:40px; border-radius:50%; object-fit:cover; box-shadow:0 2px 10px rgba(0,0,0,0.2);}
+
+.nav-links{
+  display:flex;
+  gap:38px;
+  align-items:center;
+}
+.nav-links a{
+  font-size:0.92rem;
+  font-weight:600;
+  color:var(--cream);
+  position:relative;
+  padding:4px 0;
+  transition:color 0.4s var(--ease);
+}
+.nav.scrolled .nav-links a{color:var(--charcoal);}
+.nav-links a::after{
+  content:'';
+  position:absolute; bottom:0; left:0;
+  width:0; height:2px;
+  background:var(--gold);
+  transition:width 0.35s var(--ease);
+}
+.nav-links a:hover::after{width:100%;}
+
+.nav-cta{display:flex; align-items:center; gap:16px;}
+.nav-toggle{
+  display:none;
+  width:44px; height:44px;
+  border-radius:50%;
+  background:rgba(251,243,231,0.15);
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:5px;
+}
+.nav.scrolled .nav-toggle{background:rgba(122,31,43,0.08);}
+.nav-toggle span{
+  width:20px; height:2px;
+  background:var(--cream);
+  border-radius:2px;
+  transition:all 0.35s var(--ease);
+}
+.nav.scrolled .nav-toggle span{background:var(--maroon);}
+.nav-toggle.active span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-toggle.active span:nth-child(2){opacity:0;}
+.nav-toggle.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+@media (max-width:900px){
+  .nav-links{
+    position:fixed;
+    top:0; right:0;
+    height:100vh;
+    width:min(78vw, 340px);
+    background:var(--cream);
+    flex-direction:column;
+    justify-content:center;
+    gap:34px;
+    transform:translateX(100%);
+    transition:transform 0.5s var(--ease);
+    box-shadow:-10px 0 40px rgba(0,0,0,0.15);
+  }
+  .nav-links.open{transform:translateX(0);}
+  .nav-links a{color:var(--charcoal); font-size:1.15rem;}
+  .nav-toggle{display:flex;}
+  .nav-cta .btn-primary span.btn-text-full{display:none;}
+}
+
+/* ====================== HERO ====================== */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  padding-top:90px;
+}
+.hero-bg{
+  position:absolute; inset:0;
+  z-index:0;
+}
+.hero-bg img{
+  width:100%; height:100%;
+  object-fit:cover;
+  animation:heroZoom 22s ease-in-out infinite alternate;
+}
+@keyframes heroZoom{
+  0%{transform:scale(1);}
+  100%{transform:scale(1.12);}
+}
+.hero-bg::after{
+  content:'';
+  position:absolute; inset:0;
+  background:linear-gradient(100deg, rgba(42,15,20,0.88) 0%, rgba(58,18,24,0.72) 38%, rgba(58,18,24,0.30) 68%, rgba(58,18,24,0.55) 100%);
+}
+.hero-inner{
+  position:relative; z-index:2;
+  max-width:660px;
+}
+.hero-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:rgba(251,243,231,0.12);
+  border:1px solid rgba(251,243,231,0.3);
+  backdrop-filter:blur(10px);
+  padding:9px 18px;
+  border-radius:999px;
+  font-size:0.78rem;
+  font-weight:700;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--gold-bright);
+  margin-bottom:28px;
+  opacity:0;
+  animation:fadeUp 0.9s var(--ease) 0.2s forwards;
+}
+.hero-badge .dot{
+  width:7px; height:7px; border-radius:50%;
+  background:#5fe089;
+  box-shadow:0 0 0 0 rgba(95,224,137,0.6);
+  animation:pulseDot 2s infinite;
+}
+@keyframes pulseDot{
+  0%{box-shadow:0 0 0 0 rgba(95,224,137,0.55);}
+  70%{box-shadow:0 0 0 9px rgba(95,224,137,0);}
+  100%{box-shadow:0 0 0 0 rgba(95,224,137,0);}
+}
+
+.hero h1{
+  font-size:clamp(2.6rem, 6vw, 4.6rem);
+  color:var(--cream);
+  font-weight:560;
+  letter-spacing:-0.01em;
+}
+.hero h1 .line{display:block; overflow:hidden;}
+.hero h1 .line span{
+  display:block;
+  transform:translateY(110%);
+  animation:lineUp 0.9s var(--ease) forwards;
+}
+.hero h1 .line:nth-child(1) span{animation-delay:0.35s;}
+.hero h1 .line:nth-child(2) span{animation-delay:0.48s;}
+@keyframes lineUp{to{transform:translateY(0);}}
+
+.hero h1 em{
+  font-style:italic;
+  color:var(--gold-bright);
+  font-weight:450;
+}
+
+.hero-sub{
+  margin-top:24px;
+  font-size:1.1rem;
+  color:rgba(251,243,231,0.82);
+  max-width:480px;
+  min-height:1.6em;
+  opacity:0;
+  animation:fadeUp 0.9s var(--ease) 0.7s forwards;
+}
+.typed-cursor{
+  display:inline-block;
+  width:2px; height:1.1em;
+  background:var(--gold-bright);
+  vertical-align:middle;
+  margin-left:3px;
+  animation:blink 0.85s steps(1) infinite;
+}
+@keyframes blink{50%{opacity:0;}}
+
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+.hero-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  margin-top:40px;
+  opacity:0;
+  animation:fadeUp 0.9s var(--ease) 0.95s forwards;
+}
+
+.hero-info{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:54px;
+  opacity:0;
+  animation:fadeUp 0.9s var(--ease) 1.15s forwards;
+}
+.info-badge{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background:rgba(251,243,231,0.08);
+  border:1px solid rgba(251,243,231,0.18);
+  backdrop-filter:blur(10px);
+  padding:12px 18px;
+  border-radius:14px;
+  font-size:0.85rem;
+  color:var(--cream);
+}
+.info-badge svg{width:18px; height:18px; flex-shrink:0; color:var(--gold-bright);}
+.info-badge b{font-weight:700;}
+
+.scroll-cue{
+  position:absolute;
+  bottom:36px; left:50%;
+  transform:translateX(-50%);
+  z-index:2;
+  display:flex; flex-direction:column; align-items:center;
+  gap:8px;
+  color:rgba(251,243,231,0.7);
+  font-size:0.7rem;
+  letter-spacing:0.15em;
+  text-transform:uppercase;
+  opacity:0;
+  animation:fadeUp 0.9s var(--ease) 1.4s forwards;
+}
+.scroll-cue .stick{
+  width:1px; height:34px;
+  background:linear-gradient(var(--gold-bright), transparent);
+  animation:stickMove 1.8s ease-in-out infinite;
+}
+@keyframes stickMove{
+  0%{transform:scaleY(0); transform-origin:top;}
+  50%{transform:scaleY(1); transform-origin:top;}
+  51%{transform-origin:bottom;}
+  100%{transform:scaleY(0); transform-origin:bottom;}
+}
+
+@media (max-width:600px){
+  .hero-inner{max-width:100%;}
+  .hero-actions{flex-direction:column; align-items:stretch;}
+  .hero-actions .btn{width:100%;}
+}
+
+/* ====================== SHOWCASE STRIP (signature element) ====================== */
+.showcase{
+  background:var(--maroon);
+  padding:0;
+  overflow:hidden;
+  position:relative;
+}
+.showcase-label{
+  position:absolute; top:18px; left:28px; z-index:3;
+  color:var(--gold-bright);
+  font-size:0.72rem;
+  font-weight:700;
+  letter-spacing:0.18em;
+  text-transform:uppercase;
+  display:flex; align-items:center; gap:8px;
+}
+.showcase-label::before{content:'●'; color:#5fe089; font-size:0.6em;}
+.case-track{
+  display:flex;
+  width:max-content;
+  animation:slide 42s linear infinite;
+}
+.showcase:hover .case-track{animation-play-state:paused;}
+@keyframes slide{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+.case-item{
+  width:280px; height:340px;
+  flex-shrink:0;
+  margin:0 2px;
+  position:relative;
+  overflow:hidden;
+}
+.case-item img{
+  width:100%; height:100%;
+  object-fit:cover;
+  filter:saturate(1.05);
+  transition:transform 0.6s var(--ease);
+}
+.case-item:hover img{transform:scale(1.08);}
+.case-item::after{
+  content:'';
+  position:absolute; inset:0;
+  background:linear-gradient(0deg, rgba(42,15,20,0.55) 0%, transparent 38%);
+}
+
+/* ====================== ABOUT ====================== */
+.about{
+  background:var(--cream);
+}
+.about-grid{
+  display:grid;
+  grid-template-columns:0.9fr 1.1fr;
+  gap:72px;
+  align-items:center;
+}
+@media (max-width:900px){
+  .about-grid{grid-template-columns:1fr; gap:44px;}
+}
+.about-visual{
+  position:relative;
+}
+.about-img-main{
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  box-shadow:var(--shadow-lift);
+  aspect-ratio:4/5;
+}
+.about-img-main img{width:100%; height:100%; object-fit:cover;}
+.about-img-float{
+  position:absolute;
+  bottom:-40px; right:-40px;
+  width:46%;
+  border-radius:var(--radius-md);
+  overflow:hidden;
+  box-shadow:0 16px 40px rgba(0,0,0,0.22);
+  border:6px solid var(--cream);
+  aspect-ratio:1/1;
+}
+.about-img-float img{width:100%; height:100%; object-fit:cover;}
+@media (max-width:900px){
+  .about-img-float{width:42%; bottom:-28px; right:-12px;}
+}
+
+.about-stats{
+  display:flex;
+  gap:36px;
+  margin-top:38px;
+  flex-wrap:wrap;
+}
+.stat b{
+  display:block;
+  font-family:var(--font-display);
+  font-size:2.1rem;
+  color:var(--maroon);
+  font-weight:560;
+}
+.stat span{
+  font-size:0.82rem;
+  color:var(--charcoal-soft);
+  font-weight:600;
+}
+
+.about-copy p{
+  margin-top:18px;
+  color:var(--charcoal-soft);
+  font-size:1.04rem;
+  max-width:520px;
+}
+.about-copy p:first-of-type{margin-top:20px;}
+
+/* ====================== MENU ====================== */
+.menu{background:var(--cream-soft);}
+
+.menu-filters{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-bottom:44px;
+}
+.filter-btn{
+  padding:13px 26px;
+  border-radius:999px;
+  background:var(--white);
+  color:var(--charcoal-soft);
+  font-weight:700;
+  font-size:0.9rem;
+  border:1.5px solid rgba(122,31,43,0.12);
+  transition:all 0.4s var(--ease);
+}
+.filter-btn:hover{
+  border-color:var(--rose-deep);
+  color:var(--maroon);
+}
+.filter-btn.active{
+  background:var(--maroon);
+  color:var(--cream);
+  border-color:var(--maroon);
+  box-shadow:0 8px 22px rgba(122,31,43,0.28);
+}
+
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:30px;
+}
+@media (max-width:900px){
+  .menu-grid{grid-template-columns:repeat(2, 1fr); gap:20px;}
+}
+@media (max-width:560px){
+  .menu-grid{grid-template-columns:1fr;}
+}
+
+.menu-card{
+  background:var(--white);
+  border-radius:var(--radius-md);
+  overflow:hidden;
+  box-shadow:var(--shadow-soft);
+  transition:transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
+  opacity:0; transform:translateY(30px) scale(0.97);
+}
+.menu-card.show{
+  opacity:1; transform:translateY(0) scale(1);
+  transition:opacity 0.55s var(--ease), transform 0.55s var(--ease);
+}
+.menu-card.hide{display:none;}
+.menu-card:hover{
+  transform:translateY(-10px);
+  box-shadow:var(--shadow-lift);
+}
+.menu-card-img{
+  aspect-ratio:1/1;
+  overflow:hidden;
+  position:relative;
+}
+.menu-card-img img{
+  width:100%; height:100%; object-fit:cover;
+  transition:transform 0.6s var(--ease);
+}
+.menu-card:hover .menu-card-img img{transform:scale(1.07);}
+.menu-tag{
+  position:absolute; top:14px; left:14px;
+  background:rgba(251,243,231,0.92);
+  color:var(--maroon);
+  font-size:0.7rem;
+  font-weight:800;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  padding:6px 13px;
+  border-radius:999px;
+  backdrop-filter:blur(6px);
+}
+.menu-card-body{padding:22px 22px 24px;}
+.menu-card-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:10px;
+}
+.menu-card-top h4{font-size:1.18rem; font-weight:600;}
+.menu-price{
+  font-family:var(--font-display);
+  font-weight:650;
+  font-size:1.15rem;
+  color:var(--maroon);
+  white-space:nowrap;
+}
+.menu-card-body p{
+  margin-top:8px;
+  font-size:0.88rem;
+  color:var(--charcoal-soft);
+  min-height:42px;
+}
+.menu-stars{
+  display:flex; gap:3px; margin-top:10px;
+}
+.menu-stars svg{
+  width:15px; height:15px;
+  color:var(--gold);
+  transition:filter 0.3s var(--ease);
+}
+.menu-card:hover .menu-stars svg{
+  filter:drop-shadow(0 0 5px rgba(201,161,90,0.7));
+}
+.menu-order-btn{
+  margin-top:16px;
+  width:100%;
+  padding:12px;
+  border-radius:12px;
+  background:var(--maroon);
+  color:var(--cream);
+  font-weight:700;
+  font-size:0.85rem;
+  display:flex; align-items:center; justify-content:center; gap:8px;
+  transition:transform 0.3s var(--ease), background 0.3s var(--ease);
+}
+.menu-order-btn:hover{background:var(--maroon-deep);}
+.menu-order-btn:active{transform:scale(0.94);}
+.menu-order-btn.bounced{animation:bounce 0.45s var(--ease);}
+@keyframes bounce{
+  0%{transform:scale(1);}
+  35%{transform:scale(0.9);}
+  60%{transform:scale(1.06);}
+  100%{transform:scale(1);}
+}
+
+/* ====================== CUSTOM ORDER ====================== */
+.custom{
+  background:var(--maroon);
+  position:relative;
+  overflow:hidden;
+}
+.custom::before{
+  content:'';
+  position:absolute;
+  width:600px; height:600px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(232,160,180,0.18), transparent 70%);
+  top:-200px; right:-150px;
+}
+.custom-grid{
+  display:grid;
+  grid-template-columns:0.85fr 1.15fr;
+  gap:64px;
+  align-items:start;
+  position:relative; z-index:1;
+}
+@media (max-width:900px){
+  .custom-grid{grid-template-columns:1fr; gap:40px;}
+}
+.custom .section-head h2{color:var(--cream);}
+.custom .eyebrow{color:var(--gold-bright);}
+.custom .eyebrow::before{background:var(--gold-bright);}
+.custom .section-head p{color:rgba(251,243,231,0.78);}
+
+.custom-points{margin-top:32px; display:flex; flex-direction:column; gap:18px;}
+.custom-point{display:flex; gap:14px; align-items:flex-start;}
+.custom-point .num{
+  font-family:var(--font-display);
+  font-size:1.3rem;
+  color:var(--gold-bright);
+  font-weight:650;
+  flex-shrink:0;
+}
+.custom-point p{color:rgba(251,243,231,0.85); font-size:0.95rem; margin:0;}
+.custom-point strong{color:var(--cream); display:block; font-size:1rem; margin-bottom:2px; font-family:var(--font-body); font-weight:700;}
+
+.order-form{
+  background:var(--cream);
+  border-radius:var(--radius-lg);
+  padding:42px;
+  box-shadow:0 30px 70px rgba(0,0,0,0.3);
+}
+@media (max-width:560px){.order-form{padding:28px 22px;}}
+
+.form-row{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+@media (max-width:560px){.form-row{grid-template-columns:1fr;}}
+
+.field{margin-bottom:20px;}
+.field label{
+  display:block;
+  font-size:0.82rem;
+  font-weight:700;
+  color:var(--maroon);
+  margin-bottom:8px;
+  letter-spacing:0.02em;
+}
+.field input,
+.field select,
+.field textarea{
+  width:100%;
+  padding:14px 16px;
+  border-radius:12px;
+  border:1.5px solid rgba(122,31,43,0.15);
+  background:var(--white);
+  font-family:inherit;
+  font-size:0.95rem;
+  color:var(--charcoal);
+  transition:border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  outline:none;
+  border-color:var(--rose-deep);
+  box-shadow:0 0 0 4px rgba(232,160,180,0.22);
+}
+.field textarea{resize:vertical; min-height:100px;}
+
+.file-drop{
+  border:1.8px dashed rgba(122,31,43,0.28);
+  border-radius:12px;
+  padding:24px;
+  text-align:center;
+  cursor:pointer;
+  transition:all 0.35s var(--ease);
+  position:relative;
+}
+.file-drop:hover, .file-drop.drag{
+  border-color:var(--rose-deep);
+  background:rgba(232,160,180,0.06);
+}
+.file-drop svg{width:26px; height:26px; color:var(--maroon); margin-bottom:8px;}
+.file-drop p{font-size:0.85rem; color:var(--charcoal-soft); font-weight:600;}
+.file-drop input{
+  position:absolute; inset:0; opacity:0; cursor:pointer;
+}
+.file-name{
+  margin-top:10px; font-size:0.82rem; color:var(--maroon); font-weight:700;
+}
+
+.form-submit{
+  width:100%;
+  margin-top:6px;
+  padding:17px;
+  font-size:1rem;
+}
+
+.form-success{
+  display:none;
+  align-items:center;
+  gap:10px;
+  margin-top:16px;
+  padding:14px 18px;
+  border-radius:12px;
+  background:rgba(95,224,137,0.15);
+  color:#1d7a3e;
+  font-weight:700;
+  font-size:0.88rem;
+}
+.form-success.show{display:flex; animation:fadeUp 0.5s var(--ease);}
+
+/* ====================== GALLERY ====================== */
+.gallery{background:var(--cream);}
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:22px;
+}
+@media (max-width:900px){
+  .gallery-grid{grid-template-columns:repeat(3, 1fr); gap:16px;}
+}
+@media (max-width:560px){
+  .gallery-grid{grid-template-columns:repeat(2, 1fr); gap:14px;}
+}
+.gallery-item{
+  aspect-ratio:1/1;
+  border-radius:var(--radius-md);
+  overflow:hidden;
+  cursor:pointer;
+  position:relative;
+  background:rgba(255,255,255,0.35);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,0.5);
+  box-shadow:var(--shadow-soft);
+  padding:10px;
+  transition:transform 0.45s var(--ease), box-shadow 0.45s var(--ease);
+}
+.gallery-item:hover{
+  transform:translateY(-8px);
+  box-shadow:var(--shadow-lift);
+}
+.gallery-item .frame{
+  width:100%; height:100%;
+  border-radius:calc(var(--radius-md) - 8px);
+  overflow:hidden;
+  position:relative;
+}
+.gallery-item img{
+  width:100%; height:100%; object-fit:cover;
+  transition:transform 0.6s var(--ease);
+}
+.gallery-item:hover img{transform:scale(1.1);}
+.gallery-item .frame::after{
+  content:'';
+  position:absolute; inset:0;
+  background:rgba(42,15,20,0);
+  transition:background 0.4s var(--ease);
+}
+.gallery-item:hover .frame::after{background:rgba(42,15,20,0.2);}
+.gallery-item .zoom-icon{
+  position:absolute; top:50%; left:50%;
+  transform:translate(-50%,-50%) scale(0.6);
+  opacity:0;
+  width:38px; height:38px;
+  background:rgba(251,243,231,0.95);
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  transition:all 0.4s var(--ease);
+  box-shadow:0 6px 18px rgba(0,0,0,0.2);
+  z-index:2;
+}
+.gallery-item:hover .zoom-icon{opacity:1; transform:translate(-50%,-50%) scale(1);}
+.gallery-item .zoom-icon svg{width:17px; height:17px; color:var(--maroon);}
+
+/* lightbox */
+.lightbox{
+  position:fixed; inset:0; z-index:3000;
+  background:rgba(20,8,10,0.92);
+  display:flex; align-items:center; justify-content:center;
+  opacity:0; visibility:hidden;
+  transition:opacity 0.4s var(--ease), visibility 0.4s;
+  padding:30px;
+}
+.lightbox.open{opacity:1; visibility:visible;}
+.lightbox img{
+  max-width:min(90vw, 700px); max-height:85vh;
+  border-radius:14px;
+  transform:scale(0.85);
+  transition:transform 0.4s var(--ease);
+  box-shadow:0 30px 80px rgba(0,0,0,0.5);
+}
+.lightbox.open img{transform:scale(1);}
+.lightbox-close{
+  position:absolute; top:28px; right:28px;
+  width:46px; height:46px;
+  border-radius:50%;
+  background:rgba(251,243,231,0.12);
+  border:1px solid rgba(251,243,231,0.3);
+  display:flex; align-items:center; justify-content:center;
+  color:var(--cream);
+  transition:background 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.lightbox-close:hover{background:rgba(251,243,231,0.25); transform:rotate(90deg);}
+.lightbox-close svg{width:20px; height:20px;}
+.lightbox-nav{
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:50px; height:50px;
+  border-radius:50%;
+  background:rgba(251,243,231,0.12);
+  border:1px solid rgba(251,243,231,0.3);
+  display:flex; align-items:center; justify-content:center;
+  color:var(--cream);
+  transition:background 0.3s var(--ease);
+}
+.lightbox-nav:hover{background:rgba(251,243,231,0.25);}
+.lightbox-nav svg{width:20px; height:20px;}
+.lightbox-prev{left:24px;}
+.lightbox-next{right:24px;}
+@media (max-width:600px){
+  .lightbox-nav{width:42px; height:42px;}
+  .lightbox-prev{left:8px;} .lightbox-next{right:8px;}
+}
+
+/* ====================== TESTIMONIALS ====================== */
+.testimonials{
+  background:var(--cream-soft);
+  overflow:hidden;
+}
+.t-track-wrap{
+  position:relative;
+  max-width:780px;
+  margin:0 auto;
+  overflow:hidden;
+  border-radius:var(--radius-lg);
+}
+.t-track{
+  display:flex;
+  transition:transform 0.7s var(--ease);
+}
+.t-slide{
+  min-width:100%;
+  padding:0 8px;
+  box-sizing:border-box;
+}
+.t-card{
+  background:rgba(255,255,255,0.55);
+  backdrop-filter:blur(14px) saturate(160%);
+  border:1px solid rgba(255,255,255,0.6);
+  border-radius:var(--radius-lg);
+  padding:44px;
+  box-shadow:var(--shadow-soft);
+  text-align:center;
+}
+@media (max-width:560px){.t-card{padding:30px 24px;}}
+.t-stars{display:flex; justify-content:center; gap:5px; margin-bottom:20px;}
+.t-stars svg{width:19px; height:19px; color:var(--gold);}
+.t-quote{
+  font-family:var(--font-display);
+  font-size:1.3rem;
+  font-style:italic;
+  color:var(--charcoal);
+  line-height:1.5;
+  font-weight:450;
+}
+.t-author{
+  margin-top:26px;
+  display:flex; flex-direction:column; align-items:center; gap:4px;
+}
+.t-author b{font-size:1rem; font-family:var(--font-body); font-weight:700;}
+.t-author span{font-size:0.82rem; color:var(--charcoal-soft);}
+
+.t-dots{
+  display:flex; justify-content:center; gap:10px;
+  margin-top:32px;
+}
+.t-dot{
+  width:9px; height:9px; border-radius:50%;
+  background:rgba(122,31,43,0.2);
+  transition:all 0.4s var(--ease);
+}
+.t-dot.active{background:var(--maroon); width:26px; border-radius:5px;}
+
+/* ====================== LOCATION ====================== */
+.location{background:var(--cream);}
+.location-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:0;
+  border-radius:var(--radius-lg);
+  overflow:hidden;
+  box-shadow:var(--shadow-lift);
+}
+@media (max-width:860px){
+  .location-grid{grid-template-columns:1fr;}
+}
+.location-info{
+  background:var(--maroon);
+  color:var(--cream);
+  padding:54px 46px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.location-info h3{color:var(--cream); font-size:1.9rem;}
+.location-info p.lead{color:rgba(251,243,231,0.78); margin-top:12px; font-size:0.95rem;}
+.location-rows{margin-top:30px; display:flex; flex-direction:column; gap:20px;}
+.loc-row{display:flex; gap:14px; align-items:flex-start;}
+.loc-row svg{width:20px; height:20px; color:var(--gold-bright); flex-shrink:0; margin-top:2px;}
+.loc-row b{display:block; font-size:0.92rem; margin-bottom:2px;}
+.loc-row span{font-size:0.86rem; color:rgba(251,243,231,0.75);}
+.location-info .btn{margin-top:30px; align-self:flex-start;}
+.map-frame{
+  min-height:420px;
+  position:relative;
+}
+.map-frame iframe{
+  width:100%; height:100%;
+  min-height:420px;
+  border:0;
+  filter:saturate(0.85) contrast(1.05);
+}
+
+/* ====================== SOCIAL ====================== */
+.social{background:var(--cream-soft);}
+.social-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:18px;
+}
+@media (max-width:860px){.social-grid{grid-template-columns:repeat(2,1fr);}}
+.social-card{
+  border-radius:var(--radius-md);
+  overflow:hidden;
+  position:relative;
+  aspect-ratio:1/1;
+  box-shadow:var(--shadow-soft);
+  transition:transform 0.5s var(--ease);
+}
+.social-card:hover{transform:translateY(-8px) rotate(-1deg);}
+.social-card img{width:100%; height:100%; object-fit:cover;}
+.social-card .platform-tag{
+  position:absolute; top:12px; right:12px;
+  width:34px; height:34px;
+  border-radius:50%;
+  background:rgba(251,243,231,0.9);
+  display:flex; align-items:center; justify-content:center;
+}
+.social-card .platform-tag svg{width:17px; height:17px;}
+.social-follow{
+  display:flex;
+  gap:18px;
+  justify-content:center;
+  margin-top:44px;
+  flex-wrap:wrap;
+}
+.social-follow .btn svg{width:18px; height:18px;}
+
+/* ====================== FOOTER ====================== */
+footer{
+  background:var(--charcoal);
+  color:rgba(251,243,231,0.7);
+  padding:80px 0 30px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr 1.1fr;
+  gap:48px;
+}
+@media (max-width:860px){
+  .footer-grid{grid-template-columns:1fr 1fr; gap:36px;}
+}
+@media (max-width:520px){
+  .footer-grid{grid-template-columns:1fr;}
+}
+.footer-brand{display:flex; align-items:center; gap:12px; margin-bottom:16px;}
+.footer-brand img{width:42px; height:42px; border-radius:50%;}
+.footer-brand span{font-family:var(--font-display); font-size:1.3rem; color:var(--cream); font-weight:600;}
+.footer-col p{font-size:0.9rem; line-height:1.7; max-width:280px;}
+.footer-col h5{
+  color:var(--cream);
+  font-family:var(--font-body);
+  font-size:0.85rem;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  font-weight:700;
+  margin-bottom:18px;
+}
+.footer-col ul{display:flex; flex-direction:column; gap:12px;}
+.footer-col ul li a{font-size:0.9rem; transition:color 0.3s var(--ease), padding-left 0.3s var(--ease);}
+.footer-col ul li a:hover{color:var(--gold-bright); padding-left:4px;}
+.footer-social{display:flex; gap:12px; margin-top:18px;}
+.footer-social a{
+  width:38px; height:38px;
+  border-radius:50%;
+  background:rgba(251,243,231,0.08);
+  display:flex; align-items:center; justify-content:center;
+  transition:background 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.footer-social a:hover{background:var(--maroon); transform:translateY(-3px);}
+.footer-social svg{width:17px; height:17px;}
+.footer-bottom{
+  margin-top:60px;
+  padding-top:26px;
+  border-top:1px solid rgba(251,243,231,0.1);
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:12px;
+  font-size:0.82rem;
+}
+
+/* ====================== FLOATING WHATSAPP ====================== */
+.float-wa{
+  position:fixed;
+  bottom:26px; right:26px;
+  z-index:900;
+  width:60px; height:60px;
+  border-radius:50%;
+  background:linear-gradient(135deg, #25D366, #1fb955);
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 10px 30px rgba(37,211,102,0.45);
+  animation:waPulse 2.4s infinite;
+  transition:transform 0.3s var(--ease);
+}
+.float-wa:hover{transform:scale(1.1);}
+.float-wa svg{width:30px; height:30px; color:#fff;}
+@keyframes waPulse{
+  0%{box-shadow:0 10px 30px rgba(37,211,102,0.45), 0 0 0 0 rgba(37,211,102,0.5);}
+  70%{box-shadow:0 10px 30px rgba(37,211,102,0.45), 0 0 0 16px rgba(37,211,102,0);}
+  100%{box-shadow:0 10px 30px rgba(37,211,102,0.45), 0 0 0 0 rgba(37,211,102,0);}
+}
+
+@media (max-width:600px){
+  .float-wa{width:54px; height:54px; bottom:18px; right:18px;}
+  .float-wa svg{width:26px; height:26px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ====================== NAV ====================== -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="images/shreyabakery.png" alt="Shreya Bakery logo">
+      Shreya Bakery
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#menu" class="nav-link">Menu</a></li>
+      <li><a href="#custom" class="nav-link">Custom Cakes</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#location" class="nav-link">Visit Us</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="https://wa.me/9779855083213?text=Hi%2C%20I%20want%20to%20order%20from%20Shreya%20Bakery" class="btn btn-primary btn-small" target="_blank" rel="noopener">
+        <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.04 4c-4.9 0-8.9 4-8.9 8.9 0 1.57.41 3.1 1.2 4.45L3 21l3.77-1.32a8.9 8.9 0 0 0 4.27 1.08h.01c4.9 0 8.9-4 8.9-8.9 0-2.38-.93-4.62-2.35-6.54zm-5.56 13.7h-.01a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.8.98.94-2.73-.18-.28a7.37 7.37 0 0 1-1.13-3.9 7.4 7.4 0 0 1 7.4-7.4 7.36 7.36 0 0 1 7.4 7.41c0 4.08-3.32 7.4-7.4 7.4l-.18.71v-.71zm4.06-5.54c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.86-.13.15-.26.16-.48.05-.22-.11-.94-.35-1.79-1.11a6.7 6.7 0 0 1-1.24-1.55c-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.59.28-.2.22-.78.76-.78 1.85s.8 2.15.91 2.3c.11.15 1.57 2.4 3.81 3.36.53.23.95.37 1.27.47.53.17 1.02.15 1.4.09.43-.06 1.31-.53 1.49-1.05.19-.51.19-.95.13-1.04-.05-.1-.2-.16-.42-.27z"/></svg>
+        <span class="btn-text-full">Order Now</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ====================== HERO ====================== -->
+<header class="hero" id="home">
+  <div class="hero-bg">
+    <img src="images/cake1.jpg" alt="Freshly decorated rose cake at Shreya Bakery">
+  </div>
+  <div class="container">
+    <div class="hero-inner">
+      <span class="hero-badge"><span class="dot"></span> Baked Fresh Every Morning · Gaindakot</span>
+      <h1>
+        <span class="line"><span>Freshly Baked</span></span>
+        <span class="line"><span><em>Happiness</em> Every Day</span></span>
+      </h1>
+      <p class="hero-sub" id="typedSub"></p>
+      <div class="hero-actions">
+        <a href="https://wa.me/9779855083213?text=Hi%2C%20I%20want%20to%20order%20from%20Shreya%20Bakery" class="btn btn-primary" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.04 4c-4.9 0-8.9 4-8.9 8.9 0 1.57.41 3.1 1.2 4.45L3 21l3.77-1.32a8.9 8.9 0 0 0 4.27 1.08h.01c4.9 0 8.9-4 8.9-8.9 0-2.38-.93-4.62-2.35-6.54zm-5.56 13.7h-.01a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.8.98.94-2.73-.18-.28a7.37 7.37 0 0 1-1.13-3.9 7.4 7.4 0 0 1 7.4-7.4 7.36 7.36 0 0 1 7.4 7.41c0 4.08-3.32 7.4-7.4 7.4l-.18.71v-.71zm4.06-5.54c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.86-.13.15-.26.16-.48.05-.22-.11-.94-.35-1.79-1.11a6.7 6.7 0 0 1-1.24-1.55c-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.59.28-.2.22-.78.76-.78 1.85s.8 2.15.91 2.3c.11.15 1.57 2.4 3.81 3.36.53.23.95.37 1.27.47.53.17 1.02.15 1.4.09.43-.06 1.31-.53 1.49-1.05.19-.51.19-.95.13-1.04-.05-.1-.2-.16-.42-.27z"/></svg>
+          Order Now
+        </a>
+        <a href="#menu" class="btn btn-secondary">View Menu</a>
+      </div>
+      <div class="hero-info">
+        <div class="info-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span>Open Daily <b>7 AM – 8 PM</b></span>
+        </div>
+        <div class="info-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Vijaya Chowk, <b>Gaindakot-8</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><span class="stick"></span></div>
+</header>
+
+<!-- ====================== SHOWCASE STRIP ====================== -->
+<div class="showcase">
+  <span class="showcase-label">From our display case today</span>
+  <div class="case-track" id="caseTrack">
+    <!-- duplicated via JS for seamless loop -->
+  </div>
+</div>
+
+<!-- ====================== ABOUT ====================== -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-visual reveal-left">
+      <div class="about-img-main">
+        <img src="images/cake10.jpg" alt="Elegant floral drip cake by Shreya Bakery">
+      </div>
+      <div class="about-img-float">
+        <img src="images/cake8.jpg" alt="Pink ribbon birthday cake">
+      </div>
+    </div>
+    <div class="about-copy reveal-right">
+      <span class="eyebrow">Our Story</span>
+      <h2>Every cake starts with someone we care about</h2>
+      <p>Shreya Bakery began on a simple promise: a cake should taste as good as it looks, and it should arrive on time, every time. From our kitchen at Vijaya Chowk, we bake cream cakes, breads and pastries fresh each morning — nothing sits in a freezer waiting for an order.</p>
+      <p>What makes us different isn't a secret recipe. It's that we treat a two-year-old's first birthday cake with the same care as a wedding centerpiece. Look through our gallery below — every photo is a cake we actually made, for a real family in Gaindakot.</p>
+      <div class="about-stats">
+        <div class="stat"><b>1000+</b><span>Cakes Delivered</span></div>
+        <div class="stat"><b>4.9★</b><span>Customer Rating</span></div>
+        <div class="stat"><b>100%</b><span>Fresh, Daily Baked</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== MENU ====================== -->
+<section class="menu" id="menu">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">What We Bake</span>
+      <h2>A menu worth ordering twice</h2>
+      <p>From everyday cream cakes to elaborate custom designs — every item below is baked in-house and ready for pickup or delivery.</p>
+    </div>
+
+    <div class="menu-filters reveal" id="menuFilters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="cake">Cakes 🎂</button>
+      <button class="filter-btn" data-filter="custom">Custom Cakes 🎉</button>
+      <button class="filter-btn" data-filter="pastry">Pastries 🥐</button>
+      <button class="filter-btn" data-filter="bread">Bread 🍞</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- ====================== CUSTOM ORDER ====================== -->
+<section class="custom" id="custom">
+  <div class="container custom-grid">
+    <div class="custom-copy reveal-left">
+      <span class="eyebrow">Made To Order</span>
+      <h2>Tell us the occasion. We'll design the cake.</h2>
+      <p>Birthday, anniversary, baby shower, or a theme nobody's tried before — send us the idea and a reference photo, and we'll quote you within hours.</p>
+      <div class="custom-points">
+        <div class="custom-point">
+          <span class="num">01</span>
+          <p><strong>Share your vision</strong>Fill the form with your theme, colors, or an inspiration photo.</p>
+        </div>
+        <div class="custom-point">
+          <span class="num">02</span>
+          <p><strong>We confirm details</strong>Our baker calls or messages you to finalize design, size and price.</p>
+        </div>
+        <div class="custom-point">
+          <span class="num">03</span>
+          <p><strong>Fresh on your date</strong>Your cake is baked and decorated the day of pickup or delivery.</p>
+        </div>
+      </div>
+    </div>
+
+    <form class="order-form reveal-right" id="orderForm">
+      <div class="form-row">
+        <div class="field">
+          <label for="cName">Your Name</label>
+          <input type="text" id="cName" placeholder="e.g. Sandip Thapa" required>
+        </div>
+        <div class="field">
+          <label for="cPhone">Phone Number</label>
+          <input type="tel" id="cPhone" placeholder="98XXXXXXXX" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="cType">Cake Type</label>
+          <select id="cType" required>
+            <option value="" disabled selected>Select a type</option>
+            <option>Birthday Cake</option>
+            <option>Wedding / Anniversary Cake</option>
+            <option>Theme Cake (Cartoon, Sports, Gaming)</option>
+            <option>Floral / Bridal Cake</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="cDate">Date Needed</label>
+          <input type="date" id="cDate" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="cDesc">Design Description</label>
+        <textarea id="cDesc" placeholder="Tell us the colors, theme, size, name to write on the cake, etc."></textarea>
+      </div>
+      <div class="field">
+        <label>Reference Image (optional)</label>
+        <div class="file-drop" id="fileDrop">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>
+          <p>Click or drag an image here</p>
+          <input type="file" id="cFile" accept="image/*">
+        </div>
+        <div class="file-name" id="fileName"></div>
+      </div>
+      <button type="submit" class="btn btn-dark form-submit">Send Order Request via WhatsApp</button>
+      <div class="form-success" id="formSuccess">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+        Opening WhatsApp with your order details…
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ====================== GALLERY ====================== -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Gallery</span>
+      <h2>Cakes we've sent home with our customers</h2>
+      <p>Real orders, real celebrations. Tap any photo for a closer look.</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <img src="" alt="Cake preview" id="lightboxImg">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+</div>
+
+<!-- ====================== TESTIMONIALS ====================== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Kind Words</span>
+      <h2>What Gaindakot is saying</h2>
+    </div>
+    <div class="t-track-wrap reveal">
+      <div class="t-track" id="tTrack">
+        <div class="t-slide">
+          <div class="t-card">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-quote">"The Mother's Day cake looked exactly like the picture I sent, and it was gone in ten minutes. Best bakery in Gaindakot, hands down."</p>
+            <div class="t-author"><b>Sunita Koirala</b><span>Gaindakot-8</span></div>
+          </div>
+        </div>
+        <div class="t-slide">
+          <div class="t-card">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-quote">"Ordered a construction-themed cake for my son's 2nd birthday — the detailing on the trucks blew everyone away. Will order again."</p>
+            <div class="t-author"><b>Bibek Sharma</b><span>Vijaya Chowk</span></div>
+          </div>
+        </div>
+        <div class="t-slide">
+          <div class="t-card">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-quote">"Soft, fresh, and not overly sweet like most bakery cakes. The WhatsApp ordering made the whole process so easy."</p>
+            <div class="t-author"><b>Anjali Pandey</b><span>Gaindakot</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="t-dots" id="tDots"></div>
+  </div>
+</section>
+
+<!-- ====================== LOCATION ====================== -->
+<section class="location" id="location">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Find Us</span>
+      <h2>Come say hello</h2>
+    </div>
+    <div class="location-grid reveal">
+      <div class="location-info">
+        <h3>Shreya Bakery</h3>
+        <p class="lead">Walk in for fresh cuts, or place your order ahead online.</p>
+        <div class="location-rows">
+          <div class="loc-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><b>Address</b><span>Gaindakot-8, Vijaya Chowk, Gaindakot 33000, Nepal</span></div>
+          </div>
+          <div class="loc-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div><b>Hours</b><span>Sunday – Friday: 7:00 AM – 8:00 PM</span></div>
+          </div>
+          <div class="loc-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div><b>Order / Call</b><span>+977 9855083213</span></div>
+          </div>
+        </div>
+        <a href="https://www.google.com/maps/place/Shreya+Bakery+(+Cake+and+Bake+Station)/@27.7060552,84.385606,17z/data=!3m1!4b1!4m6!3m5!1s0x3994fb84ad336eef:0xe9e8300510ab0fbd!8m2!3d27.7060553!4d84.3904769!16s%2Fg%2F11hbhk511w" target="_blank" rel="noopener" class="btn btn-secondary">
+          Get Directions
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps?q=Shreya+Bakery+Cake+and+Bake+Station+Gaindakot&ll=27.7060553,84.3904769&z=17&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Shreya Bakery location map"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== SOCIAL ====================== -->
+<section class="social" id="social">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Follow Along</span>
+      <h2>Fresh cakes, posted daily</h2>
+      <p>We post every cake before it leaves the shop. Follow us for first looks and behind-the-scenes baking.</p>
+    </div>
+    <div class="social-grid" id="socialGrid"></div>
+    <div class="social-follow">
+      <a href="https://www.facebook.com/shreyabakery123/" target="_blank" rel="noopener" class="btn btn-dark">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.88v-6.99H7.9V12h2.5V9.8c0-2.47 1.47-3.84 3.72-3.84 1.08 0 2.2.19 2.2.19v2.43h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.72l-.43 2.89h-2.29v6.99A10 10 0 0 0 22 12z"/></svg>
+        Facebook
+      </a>
+      <a href="https://www.instagram.com/shreya_bakery/" target="_blank" rel="noopener" class="btn btn-dark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== FOOTER ====================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="images/shreyabakery.png" alt="Shreya Bakery logo">
+          <span>Shreya Bakery</span>
+        </div>
+        <p>Freshly baked cakes, pastries and bread from Gaindakot-8, Vijaya Chowk — made daily, ordered easily.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/shreyabakery123/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.88v-6.99H7.9V12h2.5V9.8c0-2.47 1.47-3.84 3.72-3.84 1.08 0 2.2.19 2.2.19v2.43h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.72l-.43 2.89h-2.29v6.99A10 10 0 0 0 22 12z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/shreya_bakery/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#custom">Custom Cakes</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Categories</h5>
+        <ul>
+          <li><a href="#menu">Cakes</a></li>
+          <li><a href="#menu">Pastries</a></li>
+          <li><a href="#menu">Bread</a></li>
+          <li><a href="#custom">Custom Orders</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <p>Gaindakot-8, Vijaya Chowk, Gaindakot 33000, Nepal</p>
+        <p style="margin-top:8px;">+977 9855083213</p>
+        <p style="margin-top:8px;">Open daily, 7 AM – 8 PM</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Shreya Bakery. All rights reserved.</span>
+      <span>Crafted with care in Gaindakot 🍰</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/9779855083213?text=Hi%2C%20I%20want%20to%20order%20from%20Shreya%20Bakery" class="float-wa" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.04 4c-4.9 0-8.9 4-8.9 8.9 0 1.57.41 3.1 1.2 4.45L3 21l3.77-1.32a8.9 8.9 0 0 0 4.27 1.08h.01c4.9 0 8.9-4 8.9-8.9 0-2.38-.93-4.62-2.35-6.54zm-5.56 13.7h-.01a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.8.98.94-2.73-.18-.28a7.37 7.37 0 0 1-1.13-3.9 7.4 7.4 0 0 1 7.4-7.4 7.36 7.36 0 0 1 7.4 7.41c0 4.08-3.32 7.4-7.4 7.4l-.18.71v-.71zm4.06-5.54c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.86-.13.15-.26.16-.48.05-.22-.11-.94-.35-1.79-1.11a6.7 6.7 0 0 1-1.24-1.55c-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.59.28-.2.22-.78.76-.78 1.85s.8 2.15.91 2.3c.11.15 1.57 2.4 3.81 3.36.53.23.95.37 1.27.47.53.17 1.02.15 1.4.09.43-.06 1.31-.53 1.49-1.05.19-.51.19-.95.13-1.04-.05-.1-.2-.16-.42-.27z"/></svg>
+</a>
+
+<script>
+/* ====================== DATA ====================== */
+const WA_NUMBER = "9779855083213";
+
+const menuItems = [
+  { img:"images/cake8.jpg",  name:"Pink Ribbon Birthday Cake", price:"NPR 1,800", cat:"cake",   tag:"Bestseller", desc:"Soft vanilla sponge, pink buttercream drapes & ribbon detail." },
+  { img:"images/cake1.jpg",  name:"Mother's Day Rose Cake",    price:"NPR 2,200", cat:"cake",   tag:"Seasonal",   desc:"Hand-piped buttercream roses with a gold topper." },
+  { img:"images/cake5.jpg",  name:"Father's Day Cream Cake",   price:"NPR 1,900", cat:"cake",   tag:"Seasonal",   desc:"Blue & white swirl piping with an edible photo topper." },
+  { img:"images/cake10.jpg", name:"Floral Drip Cake",          price:"NPR 2,800", cat:"cake",   tag:"Premium",    desc:"Caramel drip, fresh roses, macarons & gold leaf." },
+  { img:"images/cake4.jpg",  name:"Butterfly Birthday Cake",   price:"NPR 2,400", cat:"cake",   tag:"Popular",    desc:"Lilac base with pink butterflies & gold pearls." },
+  { img:"images/cake3.jpg",  name:"Minnie Mouse Theme Cake",   price:"NPR 2,000", cat:"custom", tag:"Kids",       desc:"Red polka-dot fondant bow with a printed Minnie face." },
+  { img:"images/cake6.jpg",  name:"Construction Truck Cake",   price:"NPR 3,200", cat:"custom", tag:"2-Tier",     desc:"Two-tier fondant cake with trucks, cones & site details." },
+  { img:"images/cake7.jpg",  name:"Football Star Cake",        price:"NPR 2,100", cat:"custom", tag:"Sports",     desc:"Custom name topper with football & jersey cutouts." },
+  { img:"images/cake9.jpg",  name:"Battle Royale Theme Cake",  price:"NPR 2,300", cat:"custom", tag:"Gaming",     desc:"Fondant game-loot details for the gamer in your life." },
+  { img:"images/cake2.jpg",  name:"Wedding Engagement Cake",   price:"NPR 4,500", cat:"custom", tag:"2-Tier",     desc:"Green & gold two-tier cake with traditional motifs." },
+  { img:"images/cake1.jpg",  name:"Assorted Pastry Box",       price:"NPR 600",   cat:"pastry", tag:"Box of 6",   desc:"Cream & fruit pastries, freshly filled every morning." },
+  { img:"images/cake10.jpg", name:"Mini Macaron Box",          price:"NPR 450",   cat:"pastry", tag:"Box of 6",   desc:"Delicate almond macarons in seasonal flavors." },
+  { img:"images/cake8.jpg",  name:"Croissant & Danish Set",    price:"NPR 550",   cat:"pastry", tag:"Box of 4",   desc:"Buttery, flaky layers baked fresh each morning." },
+  { img:"images/cake5.jpg",  name:"Classic White Loaf",        price:"NPR 180",   cat:"bread",  tag:"Daily",      desc:"Soft milk bread loaf, baked fresh every day." },
+  { img:"images/cake4.jpg",  name:"Whole Wheat Brown Bread",   price:"NPR 200",   cat:"bread",  tag:"Healthy",    desc:"Stone-ground wheat loaf with a soft, hearty crumb." },
+];
+
+/* ====================== NAV ====================== */
+const nav = document.getElementById('nav');
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+}, { passive:true });
+
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+document.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', () => {
+  navToggle.classList.remove('active');
+  navLinks.classList.remove('open');
+}));
+
+/* ====================== TYPING ANIMATION ====================== */
+const typedEl = document.getElementById('typedSub');
+const typedText = "Custom cakes, pastries & bread — handcrafted daily at Vijaya Chowk, Gaindakot.";
+let typeIdx = 0;
+function typeWriter(){
+  if(typeIdx <= typedText.length){
+    typedEl.innerHTML = typedText.slice(0, typeIdx) + '<span class="typed-cursor"></span>';
+    typeIdx++;
+    setTimeout(typeWriter, 28);
+  }
+}
+setTimeout(typeWriter, 1300);
+
+/* ====================== SHOWCASE STRIP ====================== */
+const caseImages = ["cake1.jpg","cake2.jpg","cake3.jpg","cake4.jpg","cake5.jpg","cake6.jpg","cake7.jpg","cake8.jpg","cake9.jpg","cake10.jpg"];
+const caseTrack = document.getElementById('caseTrack');
+function buildCase(){
+  let html = '';
+  for(let r=0; r<2; r++){
+    caseImages.forEach(img => {
+      html += `<div class="case-item"><img src="images/${img}" alt="Cake from Shreya Bakery display case" loading="lazy"></div>`;
+    });
+  }
+  caseTrack.innerHTML = html;
+}
+buildCase();
+
+/* ====================== MENU GRID + FILTER ====================== */
+const menuGrid = document.getElementById('menuGrid');
+const starsSVG = `<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>`;
+
+function buildMenu(){
+  menuGrid.innerHTML = menuItems.map((item, i) => {
+    const msg = encodeURIComponent(`Hi, I want to order: ${item.name} (${item.price}) from Shreya Bakery`);
+    return `
+    <div class="menu-card show" data-cat="${item.cat}" style="transition-delay:${(i%6)*0.06}s">
+      <div class="menu-card-img">
+        <img src="${item.img}" alt="${item.name}" loading="lazy">
+        <span class="menu-tag">${item.tag}</span>
+      </div>
+      <div class="menu-card-body">
+        <div class="menu-card-top">
+          <h4>${item.name}</h4>
+          <span class="menu-price">${item.price}</span>
+        </div>
+        <p>${item.desc}</p>
+        <div class="menu-stars">${starsSVG.repeat(5)}</div>
+        <a class="menu-order-btn" href="https://wa.me/${WA_NUMBER}?text=${msg}" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.04 4c-4.9 0-8.9 4-8.9 8.9 0 1.57.41 3.1 1.2 4.45L3 21l3.77-1.32a8.9 8.9 0 0 0 4.27 1.08h.01c4.9 0 8.9-4 8.9-8.9 0-2.38-.93-4.62-2.35-6.54zm-5.56 13.7h-.01a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.8.98.94-2.73-.18-.28a7.37 7.37 0 0 1-1.13-3.9 7.4 7.4 0 0 1 7.4-7.4 7.36 7.36 0 0 1 7.4 7.41c0 4.08-3.32 7.4-7.4 7.4l-.18.71v-.71zm4.06-5.54c-.22-.11-1.31-.65-1.51-.72-.2-.07-.35-.11-.5.11-.15.22-.57.72-.7.86-.13.15-.26.16-.48.05-.22-.11-.94-.35-1.79-1.11a6.7 6.7 0 0 1-1.24-1.55c-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43c-.15 0-.39.06-.59.28-.2.22-.78.76-.78 1.85s.8 2.15.91 2.3c.11.15 1.57 2.4 3.81 3.36.53.23.95.37 1.27.47.53.17 1.02.15 1.4.09.43-.06 1.31-.53 1.49-1.05.19-.51.19-.95.13-1.04-.05-.1-.2-.16-.42-.27z"/></svg>
+          Order via WhatsApp
+        </a>
+      </div>
+    </div>`;
+  }).join('');
+
+  // bounce on click
+  document.querySelectorAll('.menu-order-btn').forEach(btn => {
+    btn.addEventListener('click', function(){
+      this.classList.add('bounced');
+      setTimeout(() => this.classList.remove('bounced'), 450);
+    });
+  });
+}
+buildMenu();
+
+const filterBtns = document.querySelectorAll('.filter-btn');
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    const cards = document.querySelectorAll('.menu-card');
+    cards.forEach(card => {
+      const match = filter === 'all' || card.dataset.cat === filter;
+      if(match){
+        card.classList.remove('hide');
+        requestAnimationFrame(() => card.classList.add('show'));
+      } else {
+        card.classList.remove('show');
+        setTimeout(() => card.classList.add('hide'), 300);
+      }
+    });
+  });
+});
+
+/* ====================== GALLERY + LIGHTBOX ====================== */
+const galleryImages = ["cake1.jpg","cake2.jpg","cake3.jpg","cake4.jpg","cake5.jpg","cake6.jpg","cake7.jpg","cake8.jpg","cake9.jpg","cake10.jpg"];
+const galleryGrid = document.getElementById('galleryGrid');
+function buildGallery(){
+  galleryGrid.innerHTML = galleryImages.map((img, i) => {
+    return `<div class="gallery-item" data-idx="${i}">
+      <div class="frame">
+        <img src="images/${img}" alt="Shreya Bakery cake gallery photo ${i+1}" loading="lazy">
+        <span class="zoom-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+      </div>
+    </div>`;
+  }).join('');
+
+  document.querySelectorAll('.gallery-item').forEach(el => {
+    el.addEventListener('click', () => openLightbox(parseInt(el.dataset.idx)));
+  });
+}
+buildGallery();
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+let currentLightbox = 0;
+
+function openLightbox(idx){
+  currentLightbox = idx;
+  lightboxImg.src = `images/${galleryImages[idx]}`;
+  lightbox.classList.add('open');
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(){
+  lightbox.classList.remove('open');
+  document.documentElement.style.overflow = '';
+  document.body.style.overflow = '';
+}
+document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
+document.getElementById('lightboxPrev').addEventListener('click', () => {
+  currentLightbox = (currentLightbox - 1 + galleryImages.length) % galleryImages.length;
+  lightboxImg.src = `images/${galleryImages[currentLightbox]}`;
+});
+document.getElementById('lightboxNext').addEventListener('click', () => {
+  currentLightbox = (currentLightbox + 1) % galleryImages.length;
+  lightboxImg.src = `images/${galleryImages[currentLightbox]}`;
+});
+document.addEventListener('keydown', (e) => {
+  if(!lightbox.classList.contains('open')) return;
+  if(e.key === 'Escape') closeLightbox();
+  if(e.key === 'ArrowLeft') document.getElementById('lightboxPrev').click();
+  if(e.key === 'ArrowRight') document.getElementById('lightboxNext').click();
+});
+
+/* ====================== TESTIMONIALS CAROUSEL ====================== */
+const tTrack = document.getElementById('tTrack');
+const tSlides = document.querySelectorAll('.t-slide');
+const tDotsWrap = document.getElementById('tDots');
+let tIndex = 0;
+
+tSlides.forEach((_, i) => {
+  const dot = document.createElement('div');
+  dot.className = 't-dot' + (i === 0 ? ' active' : '');
+  dot.addEventListener('click', () => goToSlide(i));
+  tDotsWrap.appendChild(dot);
+});
+const tDots = document.querySelectorAll('.t-dot');
+
+function goToSlide(i){
+  tIndex = i;
+  tTrack.style.transform = `translateX(-${i * 100}%)`;
+  tDots.forEach((d, idx) => d.classList.toggle('active', idx === i));
+}
+function nextSlide(){
+  goToSlide((tIndex + 1) % tSlides.length);
+}
+let tInterval = setInterval(nextSlide, 4500);
+document.querySelector('.t-track-wrap').addEventListener('mouseenter', () => clearInterval(tInterval));
+document.querySelector('.t-track-wrap').addEventListener('mouseleave', () => { tInterval = setInterval(nextSlide, 4500); });
+
+/* ====================== SOCIAL GRID ====================== */
+const socialGrid = document.getElementById('socialGrid');
+const socialImgs = ["cake3.jpg","cake4.jpg","cake6.jpg","cake9.jpg"];
+const fbIcon = `<svg viewBox="0 0 24 24" fill="#1877F2"><path d="M22 12a10 10 0 1 0-11.6 9.88v-6.99H7.9V12h2.5V9.8c0-2.47 1.47-3.84 3.72-3.84 1.08 0 2.2.19 2.2.19v2.43h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.72l-.43 2.89h-2.29v6.99A10 10 0 0 0 22 12z"/></svg>`;
+const igIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="#C13584" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#C13584" stroke="none"/></svg>`;
+
+socialGrid.innerHTML = socialImgs.map((img, i) => `
+  <a class="social-card" href="${i % 2 === 0 ? 'https://www.instagram.com/shreya_bakery/' : 'https://www.facebook.com/shreyabakery123/'}" target="_blank" rel="noopener">
+    <img src="images/${img}" alt="Shreya Bakery social media post" loading="lazy">
+    <span class="platform-tag">${i % 2 === 0 ? igIcon : fbIcon}</span>
+  </a>
+`).join('');
+
+/* ====================== CUSTOM ORDER FORM ====================== */
+const fileDrop = document.getElementById('fileDrop');
+const fileInput = document.getElementById('cFile');
+const fileNameEl = document.getElementById('fileName');
+
+fileInput.addEventListener('change', () => {
+  if(fileInput.files.length){
+    fileNameEl.textContent = `Selected: ${fileInput.files[0].name}`;
+  }
+});
+['dragenter','dragover'].forEach(evt => {
+  fileDrop.addEventListener(evt, (e) => { e.preventDefault(); fileDrop.classList.add('drag'); });
+});
+['dragleave','drop'].forEach(evt => {
+  fileDrop.addEventListener(evt, (e) => { e.preventDefault(); fileDrop.classList.remove('drag'); });
+});
+fileDrop.addEventListener('drop', (e) => {
+  if(e.dataTransfer.files.length){
+    fileInput.files = e.dataTransfer.files;
+    fileNameEl.textContent = `Selected: ${e.dataTransfer.files[0].name}`;
+  }
+});
+
+const orderForm = document.getElementById('orderForm');
+const formSuccess = document.getElementById('formSuccess');
+
+orderForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('cName').value;
+  const phone = document.getElementById('cPhone').value;
+  const type = document.getElementById('cType').value;
+  const date = document.getElementById('cDate').value;
+  const desc = document.getElementById('cDesc').value;
+
+  const msg = `Hi, I'd like to place a custom cake order:%0A%0A` +
+    `*Name:* ${encodeURIComponent(name)}%0A` +
+    `*Phone:* ${encodeURIComponent(phone)}%0A` +
+    `*Cake Type:* ${encodeURIComponent(type)}%0A` +
+    `*Date Needed:* ${encodeURIComponent(date)}%0A` +
+    `*Design:* ${encodeURIComponent(desc || 'See attached image')}`;
+
+  formSuccess.classList.add('show');
+  setTimeout(() => {
+    window.open(`https://wa.me/${WA_NUMBER}?text=${msg}`, '_blank');
+  }, 600);
+});
+
+/* ====================== SCROLL REVEAL ====================== */
+const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold:0.15 });
+revealEls.forEach(el => io.observe(el));
+
+// Apply reveal class to menu/about/section heads dynamically added content
+document.querySelectorAll('.section-head:not(.reveal)').forEach(el => {
+  el.classList.add('reveal');
+  io.observe(el);
+});
+
+/* ====================== FOOTER YEAR ====================== */
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
